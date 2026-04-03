@@ -5,4 +5,4 @@ let currentColorValue = document.querySelector('.currentColorValue')
 
 console.log(randombtn, colorInput, applyBtn, currentColorValue)
 
-randombtn
+
