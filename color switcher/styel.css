@@ -1,56 +1,29 @@
-*{
-    padding: 0;
+/* Custom styles minimized by migrating to Bootstrap 5 */
+
+body {
     margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    padding: 0;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
+#mainContainer {
+    /* Set a default fallback background */
+    background-color: #f8f9fa;
 }
 
-.container{
-    /* background-color: rgba(174, 1, 30, 0.779); */
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
+.transition-bg {
+    transition: background-color 0.4s ease-in-out;
 }
 
-#colorInput{
-    margin: 30px 0;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    gap: 100px;
-    background-color: rgb(184, 184, 205);
-    height: 40px;
-    border: none;
-    width: auto
+/* Specific hover effect for the card shadow to increase depth */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
 }
 
-
-.heading{
-    background-color: white;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 30px;
-    /* margin-top: 40px; */
-}
-
-button{
-    background-color: orange;
-    border: none;
-    padding:  10px 20px;
-    font-size: 15px;
-    border-radius: 15px;
-    transition: all linear 0.2;
-}
-
-button:active{
-    scale: 0.9;
+/* Small scale effect on buttons */
+button:active {
+    transform: scale(0.95);
 }
