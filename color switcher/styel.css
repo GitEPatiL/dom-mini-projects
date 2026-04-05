@@ -11,7 +11,7 @@ html,body{
 }
 
 .container{
-    background-color: rgba(174, 1, 30, 0.779);
+    /* background-color: rgba(174, 1, 30, 0.779); */
     height: 100vh;
     text-align: center;
     display: flex;
