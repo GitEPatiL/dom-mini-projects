@@ -1,162 +1,263 @@
+
 <div align="center">
 
-# 🧩 DOM Mini Projects
+<br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&width=500&lines=Vanilla+JS+DOM+Manipulation;5+Interactive+Mini+Projects;HTML+%7C+CSS+%7C+JavaScript" alt="Typing SVG" />
+```
+██████╗  ██████╗ ███╗   ███╗    ███╗   ███╗██╗███╗   ██╗██╗
+██╔══██╗██╔═══██╗████╗ ████║    ████╗ ████║██║████╗  ██║██║
+██║  ██║██║   ██║██╔████╔██║    ██╔████╔██║██║██╔██╗ ██║██║
+██║  ██║██║   ██║██║╚██╔╝██║    ██║╚██╔╝██║██║██║╚██╗██║██║
+██████╔╝╚██████╔╝██║ ╚═╝ ██║    ██║ ╚═╝ ██║██║██║ ╚████║██║
+╚═════╝  ╚═════╝ ╚═╝     ╚═╝    ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝
+                                                              
+        P  R  O  J  E  C  T  S
+```
 
 <br/>
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Projects](https://img.shields.io/badge/Projects-5-blueviolet?style=for-the-badge)](.)
-[![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)](.)
+[![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)](#)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](#)
+[![No Frameworks](https://img.shields.io/badge/Frameworks-None-critical?style=flat-square)](#)
+[![Projects](https://img.shields.io/badge/5_Projects-Completed-22c55e?style=flat-square)](#)
+[![GitHub](https://img.shields.io/badge/GitEPatiL-000?style=flat-square&logo=github)](https://github.com/GitEPatiL)
 
 <br/>
 
-> A curated collection of **5 interactive mini-projects** built with pure vanilla HTML, CSS & JavaScript — no frameworks, no libraries, just clean DOM magic. ✨
+> **5 handcrafted mini-projects** demonstrating the full power of vanilla DOM manipulation —  
+> no frameworks, no dependencies, just HTML · CSS · JavaScript.
+
+<br/>
 
 </div>
 
 ---
 
-## 📁 Repository Structure
+## `$ ls -la projects/`
+
+```sh
+drwxr-xr-x  color switcher/         # 🎨  Dynamic background color changer
+drwxr-xr-x  Animated Cursor/        # 🖱️  Custom interactive mouse tracker  
+drwxr-xr-x  List and Search/        # 🔍  Live real-time search & filter
+drwxr-xr-x  Simple Calculator/      # 🔢  Full arithmetic calculator
+drwxr-xr-x  Simple Todo List/       # ✅  CRUD task management app
+-rw-r--r--  README.md
+```
+
+---
+
+## ◈ Projects
+
+<br/>
+
+### `01` &nbsp; 🎨 Color Switcher
 
 ```
-dom-mini-projects/
-│
-├── 🎨  color switcher/          → Dynamic background color changer
-├── 🖱️  Animated Cursor/         → Custom interactive mouse cursor
-├── 🔍  List and Search/         → Real-time item filter & search
-├── 🔢  Simple Calculator/       → Fully functional arithmetic calculator
-└── ✅  Simple Todo List/        → Add, complete & delete tasks
+Type: DOM Styling  |  Difficulty: ★☆☆☆☆  |  File: color switcher/index.html
+```
+
+A page that dynamically changes its background color — either via themed buttons or a custom hex/name input. Built with Bootstrap 5 for layout, with pure JS powering the logic.
+
+**What it does**
+- Random color generator with a single click
+- Manual hex code / color name input with live apply
+- Displays the current active color value in real time
+
+**DOM skills covered**
+```js
+document.getElementById()    // grab elements
+style.backgroundColor        // mutate CSS via JS
+Math.random()                // generate random hex values
+```
+
+<br/>
+
+---
+
+### `02` &nbsp; 🖱️ Animated Cursor
+
+```
+Type: Mouse Events  |  Difficulty: ★★☆☆☆  |  File: Animated Cursor/index.html
+```
+
+Hijacks the default browser cursor and replaces it with a custom animated element that smoothly follows your mouse across the screen using live coordinate tracking.
+
+**What it does**
+- Tracks mouse position across the entire viewport
+- Renders a custom styled element as the cursor replacement
+- Uses CSS transitions for a smooth trailing effect
+
+**DOM skills covered**
+```js
+document.addEventListener('mousemove', e => {})   // real-time tracking
+element.style.left / style.top                    // absolute positioning
+CSS transition                                    // smooth movement
+```
+
+<br/>
+
+---
+
+### `03` &nbsp; 🔍 List & Search
+
+```
+Type: Live Filtering  |  Difficulty: ★★☆☆☆  |  File: List and Search/index.html
+```
+
+A user directory that dynamically filters and displays entries as you type. No button click required — the list responds instantly to every keystroke.
+
+**What it does**
+- Loads a list of users with name and email data
+- Filters entries in real time matching name or email
+- Shows / hides items without any page reload
+
+**DOM skills covered**
+```js
+input.addEventListener('input', ...)     // keypress-level reactivity
+element.style.display                    // show/hide DOM nodes
+Array.filter() + String.includes()       // search logic
+```
+
+<br/>
+
+---
+
+### `04` &nbsp; 🔢 Simple Calculator
+
+```
+Type: Logic & State  |  Difficulty: ★★★☆☆  |  File: Simple Calculator/index.html
+```
+
+A fully functional arithmetic calculator built from scratch. Handles sequential operations, operator chaining, and display state — all in vanilla JS.
+
+**What it does**
+- Supports `+`, `−`, `×`, `÷` operations
+- Handles decimal numbers and chained calculations
+- Clear / reset with proper state management
+
+**DOM skills covered**
+```js
+event delegation (click)         // single handler for all buttons
+eval() / manual arithmetic        // compute expressions
+innerHTML manipulation            // update display live
+```
+
+<br/>
+
+---
+
+### `05` &nbsp; ✅ Simple Todo List
+
+```
+Type: Full CRUD  |  Difficulty: ★★★☆☆  |  File: Simple Todo List/index.html
+```
+
+The definitive DOM exercise — a complete task manager where you can add new todos, toggle their completion state, and permanently delete them. All state lives in the DOM.
+
+**What it does**
+- Add tasks via input + button (or Enter key)
+- Check off tasks to mark them complete (strikethrough)
+- Delete individual tasks permanently from the list
+
+**DOM skills covered**
+```js
+document.createElement()         // dynamically build new list items
+element.appendChild()            // inject elements into DOM
+classList.toggle('done')         // toggle completion style
+element.remove()                 // delete from DOM
 ```
 
 ---
 
-## 🚀 Projects Showcase
+## ◈ Tech Stack
 
-### 🎨 1. Color Switcher
-> **Instantly paint the page with a button click**
+| Layer | Technology | Purpose |
+|---|---|---|
+| **Structure** | `HTML5` | Semantic markup & layout scaffolding |
+| **Styling** | `CSS3` | Animations, transitions & visual design |
+| **Logic** | `Vanilla JavaScript` | Events, DOM manipulation, state management |
+| **UI Library** | `Bootstrap 5` *(Color Switcher only)* | Responsive utility classes |
 
-Toggle the background color of the entire page by clicking themed color buttons. A clean introduction to DOM event listeners and dynamic CSS manipulation.
-
-**Key Concepts:** `addEventListener` · `style.backgroundColor` · DOM Targeting
-
----
-
-### 🖱️ 2. Animated Cursor
-> **Your mouse, but make it ✨ aesthetic**
-
-Replaces the default cursor with a custom animated follower element that tracks your mouse in real time. Built using mouse-event tracking and smooth CSS transitions.
-
-**Key Concepts:** `mousemove` event · CSS `transform` · Element positioning
+> ⚡ Zero npm packages. Zero build steps. Zero config. Open the file, it just works.
 
 ---
 
-### 🔍 3. List & Search
-> **Find anything in your list — instantly**
+## ◈ DOM Skills Map
 
-Displays a list of items and filters them in real-time as the user types into a search box, no reload required. Great practice for input-driven DOM updates.
+The skills practiced across all 5 projects — visualized as a learning progression:
 
-**Key Concepts:** `input` event · `filter()` · Dynamic display toggling
-
----
-
-### 🔢 4. Simple Calculator
-> **The classic. Built from scratch.**
-
-A fully working calculator supporting addition, subtraction, multiplication, and division. Handles chained operations and edge cases with a minimal, intuitive UI.
-
-**Key Concepts:** `click` delegation · Arithmetic logic · Display state management
-
----
-
-### ✅ 5. Simple Todo List
-> **Your tasks. Organized. Under control.**
-
-A complete CRUD task manager — add new todos, mark them as done, and delete them from the list. The quintessential DOM manipulation exercise.
-
-**Key Concepts:** `createElement` · `appendChild` · `classList.toggle` · `remove()`
+```
+SELECTION ──────────────────────────────────────────────────────► MASTERY
+    │                                                                 │
+  Level 1          Level 2          Level 3          Level 4         │
+  ─────────        ─────────        ─────────        ─────────       │
+  querySelector    addEventListener  createElement    State mgmt      │
+  getElementById   mousemove         appendChild      Event chains    │
+  innerHTML        input events      classList        DOM CRUD        │
+  style.prop       click events      remove()         Live updates    │
+    │                                                                 │
+  Color            Animated          List &            Todo List       │
+  Switcher         Cursor            Search            Calculator      │
+```
 
 ---
 
-## 🛠️ Tech Stack
-
-| Technology | Role |
-|---|---|
-| ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat-square) **HTML5** | Structure & semantic layout |
-| ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat-square) **CSS3** | Styling, animations & responsive design |
-| ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square) **Vanilla JS** | DOM manipulation, events & logic |
-
-No build tools. No dependencies. No package managers. Just open and run. 🎯
-
----
-
-## ▶️ Getting Started
-
-Running any project is as simple as **3 steps**:
+## ◈ Getting Started
 
 ```bash
-# 1. Clone the repository
+# Clone the repo
 git clone https://github.com/GitEPatiL/dom-mini-projects.git
+cd dom-mini-projects
 
-# 2. Navigate into any project folder
-cd "dom-mini-projects/Simple Todo List"
-
-# 3. Open in browser (or just double-click index.html)
-start index.html   # Windows
-open index.html    # macOS
+# Pick a project and open it — that's literally it
+cd "Simple Todo List" && start index.html        # Windows
+cd "Simple Todo List" && open index.html         # macOS/Linux
 ```
 
-> **No server setup. No npm install. No config.** Just a browser and you're good to go! 🚀
+No `npm install`. No `.env` file. No server required.  
+Any modern browser will run these instantly. 🚀
 
 ---
 
-## 🎯 What You'll Learn
+## ◈ Quick Reference
 
-By exploring and extending these projects, you will sharpen your skills in:
-
-- ✅ **DOM Selection** — `querySelector`, `getElementById`, `getElementsByClassName`
-- ✅ **Event Handling** — `addEventListener`, event delegation, keyboard & mouse events
-- ✅ **Dynamic Styling** — `classList.add/remove/toggle`, `style` property manipulation
-- ✅ **Element CRUD** — `createElement`, `appendChild`, `removeChild`, `innerHTML`
-- ✅ **Real-time Interaction** — Live filtering, cursor tracking, dynamic updates
-- ✅ **State Management** — Managing UI state with plain JavaScript (no frameworks!)
-
----
-
-## 📊 Project Overview
-
-| # | Project | Core Feature | Skills Practiced |
-|---|---|---|---|
-| 1 | 🎨 Color Switcher | Button-triggered background change | Events, CSS via JS |
-| 2 | 🖱️ Animated Cursor | Mouse-following custom cursor | mousemove, transforms |
-| 3 | 🔍 List & Search | Real-time keyword filter | Input events, filtering |
-| 4 | 🔢 Simple Calculator | Arithmetic operations | Logic, state, display |
-| 5 | ✅ Simple Todo List | Add / Complete / Delete tasks | Full DOM CRUD |
+| # | Project | Difficulty | Core Concept | Open |
+|:---:|---|:---:|---|---|
+| 01 | 🎨 Color Switcher | `Easy` | CSS via JS, Random values | `color switcher/index.html` |
+| 02 | 🖱️ Animated Cursor | `Easy+` | Mouse tracking, Positioning | `Animated Cursor/index.html` |
+| 03 | 🔍 List & Search | `Medium` | Live filtering, Array methods | `List and Search/index.html` |
+| 04 | 🔢 Simple Calculator | `Medium` | Logic, State, Display updates | `Simple Calculator/index.html` |
+| 05 | ✅ Simple Todo List | `Medium` | Full CRUD DOM operations | `Simple Todo List/index.html` |
 
 ---
 
-## 🤝 Contributing
+## ◈ Contributing
 
-Got an idea to improve one of the projects? Fork it, break it, fix it, and send a PR!
+Found a bug? Have a better solution? Improvements are welcome.
 
-```
-1. Fork the repository
-2. Create a new branch → git checkout -b feature/your-feature
-3. Commit your changes → git commit -m "feat: add awesome thing"
-4. Push and open a Pull Request
+```bash
+# Workflow
+git checkout -b fix/your-fix-name
+git commit -m "fix: describe what you changed"
+git push origin fix/your-fix-name
+# → Open a Pull Request
 ```
 
 ---
 
 <div align="center">
 
-**Made with ❤️ & pure JavaScript**
+<br/>
 
-*The best way to learn DOM manipulation is to build things — so keep building!*
+```
+"The browser is your canvas. The DOM is your API. Go build."
+```
 
-[![GitHub](https://img.shields.io/badge/GitHub-GitEPatiL-181717?style=for-the-badge&logo=github)](https://github.com/GitEPatiL/dom-mini-projects)
+<br/>
+
+Made with `</> ` and zero dependencies &nbsp;·&nbsp; [@GitEPatiL](https://github.com/GitEPatiL)
+
+<br/>
 
 </div>
